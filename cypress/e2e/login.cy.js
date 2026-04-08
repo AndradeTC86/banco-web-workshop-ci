@@ -11,7 +11,7 @@ describe('Usuario', () => {
     cy.get('#username').type(userData.usuario)
     cy.get('#senha').type(userData.senha)
 
-    cy.get('[onclick*=login]').click()
+    cy.get('[onclick*=logint]').click()
 
     cy.contains('h4', 'Realizar Transferência').should('not.be.hidden')
   })
